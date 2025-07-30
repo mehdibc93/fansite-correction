@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Actualités – Mohamed Ali</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fansite.css">
+  <style>
+    .actualites-section {
+      padding: 40px 20px;
+      background-color: #f8f8f8;
+    }
+
+    .actualites-section h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #c40000;
+      font-size: 2.5em;
+    }
+
+    .actualite {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .actualite h2 {
+      margin-top: 0;
+      color: #c40000;
+    }
+
+    .actualite p {
+      line-height: 1.6;
+    }
+
+    /* Banniere image */
+    .banniere {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Navbar horizontale */
+    nav .navbar {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #c40000;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      margin: 0;
+    }
+
+    nav .navbar li {
+      margin: 0 15px;
+    }
+
+    nav .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background 0.3s, color 0.3s;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+
+    nav .navbar a:hover,
+    nav .navbar a.active {
+      background-color: #a00000;
+    }
+
+    /* Footer simple */
+    footer {
+      background-color: #c40000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bannière -->
+  <header>
+    
+    
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="actualites.html" class="active">Actualités</a></li>
+        <li><a href="biographie.html">Biographie</a></li>
+        <li><a href="evenement.html">Événements</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="videos.html">Vidéos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenu principal -->
+  <main>
+    <section class="actualites-section">
+      <h1>Actualités sur Mohamed Ali</h1>
+
+      <div class="actualite">
+        <h2>Exposition hommage à Mohamed Ali – Juillet 2025</h2>
+        <p>Un musée américain consacre une grande exposition retraçant la carrière et l’engagement de Mohamed Ali. L’exposition inclut des objets rares, des vidéos inédites et des témoignages émouvants.</p>
+      </div>
+
+      <div class="actualite">
+        <h2>Documentaire inédit bientôt disponible</h2>
+        <p>Un nouveau documentaire intitulé <em>Ali: The People's Champion</em> sortira en streaming cet automne. Il explore sa vie au-delà de la boxe, notamment son combat pour les droits civiques.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>Site fan dédié à Mohamed Ali – © 2025</p>
+    <p>Suivez-nous sur :
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">YouTube</a>
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Biographie de Mohamed Ali</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fansite.css">
+  <style>
+    /* Banniere */
+    .banniere {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* NAVBAR */
+    nav .navbar {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #c40000;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      margin: 0;
+    }
+
+    nav .navbar li {
+      margin: 0 15px;
+    }
+
+    nav .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background 0.3s, color 0.3s;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+
+    nav .navbar a:hover,
+    nav .navbar a.active {
+      background-color: #a00000;
+    }
+
+    /* Section biographie */
+    .biographie-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 30px;
+      padding: 40px 20px;
+      background-color: #f8f8f8;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .biographie-image {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+
+    .biographie-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .biographie-texte {
+      flex: 2 1 400px;
+    }
+
+    .biographie-texte h1 {
+      margin-top: 0;
+      font-size: 2em;
+      color: #c40000;
+    }
+
+    .biographie-texte p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .biographie-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .biographie-texte {
+        text-align: justify;
+      }
+    }
+
+    /* Footer */
+    footer {
+      background-color: #c40000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bannière + NAVBAR -->
+  <header>
+   
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="biographie.html" class="active">Biographie</a></li>
+        <li><a href="evenement.html">Événements</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="videos.html">Vidéos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenu principal -->
+  <main>
+    <section class="biographie-section">
+      <div class="biographie-image">
+        <img src="img/photo mohamed ali.jpg" alt="Portrait de Mohamed Ali">
+      </div>
+      <div class="biographie-texte">
+        <h1>Biographie de Mohamed Ali</h1>
+        <p><strong>Mohamed Ali</strong>, né Cassius Marcellus Clay Jr. le 17 janvier 1942 à Louisville, est considéré comme l’un des plus grands boxeurs de l’histoire.</p>
+        <p>Champion olympique en 1960, il devient champion du monde des poids lourds en 1964 à seulement 22 ans en battant Sonny Liston. Il adopte le nom Mohamed Ali après sa conversion à l’islam.</p>
+        <p>Refusant de participer à la guerre du Vietnam, il est banni temporairement du ring, avant de revenir triomphalement dans les années 1970 avec des combats légendaires contre Joe Frazier, George Foreman et Ken Norton.</p>
+        <p>Il était connu pour sa vitesse, son style unique, et ses phrases célèbres comme « Je vole comme un papillon, je pique comme une abeille ».</p>
+        <p>En dehors du sport, Ali s’est imposé comme une icône mondiale des droits civiques, de la paix et de la justice sociale. Il a pris sa retraite en 1981 avec 56 victoires (37 par KO) pour seulement 5 défaites.</p>
+        <p>Mohamed Ali s’est éteint en 2016, laissant un héritage qui dépasse largement la boxe. Il reste un symbole universel de courage, de dignité et de liberté.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>Site fan dédié à Mohamed Ali – © 2025</p>
+    <p>Suivez-nous sur :
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">YouTube</a>
+    </p>
+  </footer>
+
+</body>
+</html>

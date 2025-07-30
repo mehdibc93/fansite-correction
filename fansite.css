@@ -1,0 +1,258 @@
+/* Réinitialisation de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  background-image: url("img/mohamed ali ring.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fond spécifique pour la page Événements */
+body.evenement-page {
+  background-image: url("img/mohamed\ ali\ ko.webp"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Fond spécifique pour la page Photos */
+body.photos-page {
+  background-image: url("img/mohamed ali ring.webp"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #c40000;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ffdfdf;
+}
+
+/* Contenu principal */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  flex: 1;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #c40000;
+}
+
+/* Cadre blanc pour événements */
+.cadre-blanc {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid #c40000;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.titre-evenement {
+  text-align: center;
+  color: #c40000;
+  margin-bottom: 25px;
+  font-size: 2.2em;
+}
+
+/* Cadre blanc pour de la galerie photos */
+.cadre-galerie {
+  background-color: rgba(255, 255, 255, 0.94);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+/* Galerie photos */
+.galerie-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.galerie-photos img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.galerie-photos img:hover {
+  transform: scale(1.05);
+}
+
+/* Biographie */
+.accueil-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-bio {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.image-bio:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #c40000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-links, .social {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* Section Vidéos */
+.videos-section {
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 900px;
+  margin: 40px auto 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.videos-section h1 {
+  margin-bottom: 40px;
+  color: #c40000;
+}
+
+/* Conteneur vidéo locale pour chaque vidéo */
+.video-locale {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.video-locale h2 {
+  margin-bottom: 15px;
+  color: #c40000;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Section YouTube intégrée dans le même cadre blanc */
+.youtube-section {
+  background-color: transparent; /* transparent pour ne pas créer un autre cadre */
+  padding: 0 20px 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.youtube-section h2 {
+  margin-bottom: 20px;
+  color: #c40000;
+}
+
+.youtube-links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 16px;
+  background-color: crimson;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.youtube-links a:hover {
+  background-color: darkred;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+}

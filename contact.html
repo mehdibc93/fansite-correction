@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – Mohamed Ali</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="fansite.css" />
+  <style>
+    .contact-section {
+      padding: 40px 20px;
+      background-color: #f8f8f8;
+      max-width: 700px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #c40000;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #111;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+
+    /* Alignement navbar */
+    header .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .navbar li {
+      margin: 0;
+    }
+
+    .navbar a {
+      display: block;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      background-color: #c40000;
+      color: white;
+    }
+
+    .banniere {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #c40000;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bannière et navbar -->
+  <header>
+    <img src="img/banniere-mohamed-ali.jpg" alt="Bannière Mohamed Ali" class="banniere" />
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="biographie.html">Biographie</a></li>
+        <li><a href="evenement.html">Événements</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="videos.html">Vidéos</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Formulaire de contact -->
+  <main>
+    <section class="contact-section">
+      <h1>Contactez-nous</h1>
+      <form action="#" method="post">
+        <input type="text" name="nom" placeholder="Votre nom" required />
+        <input type="email" name="email" placeholder="Votre adresse email" required />
+        <textarea name="message" rows="6" placeholder="Votre message..." required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Site fan dédié à Mohamed Ali – © 2025</p>
+    <p>Suivez-nous sur :
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">YouTube</a>
+    </p>
+  </footer>
+
+</body>
+</html>
